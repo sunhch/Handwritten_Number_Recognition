@@ -1,17 +1,15 @@
 Handwritten Number Recognition
 ====================
 Functionality:
-    • Upload image
-    • Give recognization feedback
-    • Record current time, filename and result in a table
-
+    * Upload image
+    * Give recognization feedback
+    * Record current time, filename and result in a table
 
 Frameworks used to implement this program include:
-    • Tensorflow
-    • Flask
-    • Docker
-    • Cassandra
-
+    * Tensorflow
+    * Flask
+    * Docker
+    * Cassandra
 
 Usage steps:
     1. Start a Cassandra container (docker run -p 9142:9042 --name fan-cassandra -d cassandra:latest)
@@ -22,8 +20,8 @@ Usage steps:
     6. Access the webpage through http://0.0.0.0:4000 and follow the instructions to upload images
     7. Use exec -it fan-cassandra cqlsh to access the cassandra countainer
     8. Enter:
-            USE mnist;
-            select*from picdatabase;
+       	USE mnist;
+       	select*from picdatabase;
     9. You should see a table containing all the logs
     
     

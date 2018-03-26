@@ -1,0 +1,6 @@
+flask
+gunicorn
+gevent
+tensorflow
+Pillow
+cassandra-driver==3.11.0
